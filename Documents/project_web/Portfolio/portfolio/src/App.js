@@ -7,9 +7,8 @@ import DefaultLayout from './layout/DefaultLayout';
 
 
 function App() {
-  return (
-    
 
+  return (
       <Router>
         <div className='App'>
           <Routes>
@@ -19,7 +18,7 @@ function App() {
               path={route.path}
               key={index}
               element={
-                <DefaultLayout>
+                <DefaultLayout about={route.path === '/about' ? true : ''} >
                     <Page />
                   </DefaultLayout>
                 } />
@@ -27,8 +26,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-
-    
   );
 }
 

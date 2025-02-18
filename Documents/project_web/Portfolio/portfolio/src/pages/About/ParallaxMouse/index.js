@@ -18,29 +18,35 @@ function ParallaxMouse() {
 
 
     return ( 
-        <div>
-            <div className="parallax-container" onMouseMove={handleMouseMove}>
-                <img
-                    src="/images/librabry.png"
-                    alt="Layer 1"
-                    className={cx('parallax-image', 'layer-1')}
-                    style={{ transform: `translate(${offset.x * 0.3}px, ${offset.y * 0.3}px)` }}
-                    />
-                <img
-                    src="/images/logo_light.png"
-                    alt="Layer 2"
-                    className={cx('parallax-image', 'layer-2')}
-                    style={{ transform: `translate(${offset.x * 0.5}px, ${offset.y * 0.5}px)` }}
-                    />
-                <img
-                    src="/images/hall.png"
-                    alt="Layer 3"
-                    className={cx('parallax-image', 'layer-3')}
-                    style={{ transform: `translate(${offset.x * 0.7}px, ${offset.y * 0.7}px)` }}
-                    />
+            <div className={cx('parallax-container')} onMouseMove={handleMouseMove}>
+                
+                    <img
+                        src="/images/librabry.png"
+                        alt="Layer 1"
+                        className={cx('layer-1', 'parallax-image')}
+                        style={{ transform: `translate(${offset.x * 0.3}px, ${offset.y * 0.3}px)` }}
+                        />
+               
+
+                
+                    <img
+                        src="/images/logo_light.png"
+                        alt="Layer 2"
+                        className={cx('layer-2', 'parallax-image')}
+                        style={{ transform: `translate(${offset.x * 0.5}px, ${offset.y * 0.5}px)` }}
+                        />
+               
+
+                
+                    <img
+                        src="/images/hall.png"
+                        alt="Layer 3"
+                        className={cx('layer-3', 'parallax-image')}
+                        style={{ transform: `translate(${offset.x * 0.7}px, ${offset.y * 0.7}px)` }}
+                        />      
             </div>
-            <div className={cx('line')}></div>
-        </div>
+            
+     
   );
 }
 

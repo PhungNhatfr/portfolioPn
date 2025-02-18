@@ -1,12 +1,7 @@
 
-
-import classNames from 'classnames/bind';
 import {  useEffect, useState } from 'react';
-import styles from './DarkMode.module.scss';
+
 import ThemeToggleButton from './ThemeToggleButton';
-
-const cx = classNames.bind(styles);
-
 
 
 function DarkMode({children}) {

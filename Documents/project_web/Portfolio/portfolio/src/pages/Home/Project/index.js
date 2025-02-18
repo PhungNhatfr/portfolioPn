@@ -1,9 +1,9 @@
-import { faSun } from '@fortawesome/free-regular-svg-icons';
+
 import classNames from 'classnames/bind';
 
 import ShowProject from '../../../components/Popper/Project';
 import styles from './Project.module.scss';
-import Button from '../../../components/Button';
+
 
 const cx = classNames.bind(styles);
 
@@ -42,7 +42,7 @@ function Project() {
                 {PROJECT_ITEMS.map((project, index) => {
                     return (
                         <ShowProject projects={project} key={index}> 
-                            {project.link && <a href={project.link} target='_blank' >
+                            {project.link && <a href={project.link} target='_blank' rel='noreferrer' >
                                 <div className={cx('project-container')}>
                                     <h3 className={cx('title-project')}>{project.title}</h3>
                                     <p className={cx('source')}>{project.source}</p>

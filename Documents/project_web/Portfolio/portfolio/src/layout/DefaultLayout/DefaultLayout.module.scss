@@ -19,6 +19,24 @@
     z-index: 3;
 }
 
+.home-icon {
+    transition: transform 1s ease-in-out;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    z-index: 3;
+    padding-top: 1rem;
+    padding-left: 1.1rem;
+}
+
+.home-icon:hover {
+    transform:  rotate(360deg);
+    border-style: outset;
+    border-color: var(--border-effect);
+
+}
+
 .defaultLayout {
     height: 1000px;
     background-color: var(--background-color);

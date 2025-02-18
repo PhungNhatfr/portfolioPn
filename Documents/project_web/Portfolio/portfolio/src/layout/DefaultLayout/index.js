@@ -1,6 +1,6 @@
 
 import classNames from 'classnames/bind';
-import { faBars, faHouse, faMoon, faSun, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHouse, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './DefaultLayout.module.scss';
@@ -12,7 +12,7 @@ import Menu from '../../components/Popper/Menu';
 
 const cx = classNames.bind(styles);
 
-function DefaultLayout({ children }) {
+function DefaultLayout({ children, about }) {
     
     
     const MENU_ITEMS = [
@@ -35,6 +35,7 @@ function DefaultLayout({ children }) {
                 <Button iconOnly={<FontAwesomeIcon icon={ faBars}  />} className={cx('menu-icon')} /> 
             </Menu> 
             
+            {about && <Button iconOnly={ <FontAwesomeIcon icon={faHouse} className={cx('icon')} />} className={cx('home-icon')} to="/" /> }
            
             {children}
         </div>
