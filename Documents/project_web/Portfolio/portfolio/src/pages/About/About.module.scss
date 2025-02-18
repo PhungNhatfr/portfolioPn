@@ -1,0 +1,41 @@
+.home-icon {
+    transition: transform 1s ease-in-out;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    z-index: 3;
+    padding-top: 1rem;
+    padding-left: 1.1rem;
+}
+
+.home-icon:hover {
+    transform:  rotate(360deg);
+    border-style: outset;
+    border-color: var(--border-effect);
+
+}
+
+.text {
+    position: absolute;
+    top: 35rem;
+    left: 13rem;
+    right: 13rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.section-2, .section-3 {
+    margin-top: 1.2rem;
+}
+
+p {
+    text-align: justify; 
+    line-height: 1.6; 
+}
+
+.cv {
+    position: absolute;
+    top: 60rem;
+    left: 43rem;
+}

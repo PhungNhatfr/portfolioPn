@@ -1,0 +1,25 @@
+
+
+.menu-icon {
+    transition: transform 1s ease-in-out;
+    box-shadow: var(--box-shadow);
+}
+
+.menu-icon:hover {
+    transform:  rotate(360deg);
+    border-style: outset;
+    border-color: var(--border-effect);
+
+}
+
+.menu-icon, .menu {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 3;
+}
+
+.defaultLayout {
+    height: 1000px;
+    background-color: var(--background-color);
+}

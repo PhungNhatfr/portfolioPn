@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+$light-background: #f4f4d4;
+$light-text: #4f5a50;
+$light-bg-button: #f4f4d4;
+$light-bg-footer: #FBFFE3;
+$light-box-shadow: rgb(0 0 0 / 40%) 0px 2px 12px;
+$light-border-effect: #e4e81f;
+$light-project-bg: #f4f5b0;
+$light-circle-animation: #AAB99A;
+$light-icon: #AAB99A;
+$light-toggle: #697565;
+
+$dark-background: #1A120B;
+$dark-text: #E5E5CB;
+$dark-bg-button: #1A120B;
+$dark-bg-footer: #6D7372;
+$dark-box-shadow: rgb(255 255 255 / 40%) 0px 2px 12px;
+$dark-border-effect: #fffefe;
+$dark-project-bg: #8c865f;
+$dark-circle-animation: #c9be78;
+$dark-icon: #12150f;
+$dark-toggle: #3C3D37;
+
+:root {
+    --white: #F6F6F6;
+    --light-grey: #ADAAAA;
+    --dark-grey: #8b8989;
+    --yellow-sun: #FFC218;
+    --yellow-moon: #ecbd31;
+
+    --background-color: #{$light-background};
+    --background-color-button: #{$light-bg-button};
+    --text-color: #{$light-text};
+    --box-shadow: #{$light-box-shadow};
+    --border-effect: #{$light-border-effect};
+    --project-bg : #{$light-project-bg};
+    --circle: #{$light-circle-animation};
+    --icon: #{$light-icon};
+    --toggle: #{$light-toggle};
+
+    --font-family: 'ProximaNova', sans-serif;
+    --size-text-menu: 1.6rem;
+    --font-weight-menu: 600;
+}
+
+[data-theme='dark'] {
+    --background-color: #{$dark-background};
+    --background-color-button: #{$dark-bg-button};
+    --text-color: #{$dark-text};
+    --box-shadow: #{$dark-box-shadow};
+    --border-effect: #{$dark-border-effect};
+    --project-bg : #{$dark-project-bg};
+    --circle: #{$dark-circle-animation};
+    --icon: #{$dark-icon};
+    --toggle: #{$dark-toggle};
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+    overflow-y: overlay;
+    background-color: var(--background-color);
+}
+
+a, button {
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+// Fonts emmbeded
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/proximanova_extrabold.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/proximanova_bold.otf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/proximanova_bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/proximanova_regular.ttf');
+    font-weight: 400;
+}
+
