@@ -1,0 +1,37 @@
+ 
+
+.parallax-container {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.parallax-image {
+    border-radius: 20px;
+}
+.layer-1 {
+    position: relative;
+    left: 4rem;
+    z-index: 1;
+    width: 30rem;
+    height: auto;
+    
+}
+
+.layer-2 {
+    width: 20rem;
+    height: auto;
+    z-index: 3;
+}
+
+.layer-3 {
+    position: relative;
+    right: 4rem;
+    top: 3rem;
+    width: 30rem;
+    height: auto;
+}
+

@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    height: 300vh; /* Chiều cao tổng cộng = 2 trang */
+    
+  }
+  
+  .section {
+    height: 100vh; /* Mỗi section chiếm toàn bộ màn hình */
+  }
+  
+  
+  
+  .project {
+   margin: 0 10rem;
+  }
+
+  .footer {
+    margin: 0 10rem;
+
+  }
+  
+  

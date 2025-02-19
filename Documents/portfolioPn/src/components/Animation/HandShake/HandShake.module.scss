@@ -1,0 +1,65 @@
+
+.main{
+    width:25rem;
+    height:25rem;
+    border:1px solid #CCC;
+    position:relative;
+    top:0; bottom:0; left:0;right:0;
+    border-radius:50%; 
+  }
+  
+.circle{
+    width:3rem;
+    height:3rem;
+    background: var(--circle);
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+@keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-12.5rem)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-12.5rem)
+                rotate(-360deg);
+    }
+  }
+  
+.title {
+    margin-top: 10rem;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-left: 1rem;
+    color: var(--text-color);
+}
+//animation
+
+@keyframes slideText {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateX(0); }
+  }
+
+@keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+.main {
+    animation: grow-and-shrink 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
